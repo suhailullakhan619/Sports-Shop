@@ -1,0 +1,152 @@
+/* Add in index.css or App.css */
+a:hover {
+    color: #00BFFF;
+  }
+  
+  /* index.css */
+
+/* General Styles */
+body {
+    background-color: #1c1c1c; /* Dark background for entire site */
+    color: #f1f1f1; /* Light text for all sections */
+    font-family: Arial, sans-serif;
+}
+
+/* Orders Page */
+.orders-page {
+    padding: 2rem;
+}
+
+.orders-header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #00bcd4; /* Sky-blue accent */
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2d2d2d;
+}
+
+.order-item p {
+    margin: 0.5rem 0;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Cart Page */
+.cart-page {
+    padding: 2rem;
+}
+
+.cart-header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #00bcd4; /* Sky-blue accent */
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    background-color: #2d2d2d;
+}
+
+.cart-item h3 {
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.price {
+    color: #ff9800; /* Highlight prices in orange */
+}
+
+/* Responsive grid for Orders */
+@media (max-width: 768px) {
+    .orders-grid {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+    }
+}
+
+/* index.css */
+
+/* General Product Item Styles */
+.product-item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 204, 255, 0.7); /* Glowing blue shadow effect */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    padding: 1rem;
+  }
+  
+  /* Add to Cart and Buy Now Button Styles */
+  .add-to-cart-btn,
+  .buy-now-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #03a9f4;
+    color: white;
+  }
+  
+  .buy-now-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .add-to-cart-btn:hover,
+  .buy-now-btn:hover {
+    background-color: #0288d1; /* Darker shade of blue for hover */
+    transform: scale(1.05); /* Slightly enlarge buttons on hover */
+  }
+  
+  /* Glowing Effect for Product Items */
+  .product-item:hover .product-image {
+    animation: glow 1.5s infinite alternate; /* Apply the glow animation to the image */
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 204, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 204, 255, 1);
+    }
+  }
+  
